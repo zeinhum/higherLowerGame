@@ -15,6 +15,7 @@ def play_game():
 
         print(f"Option A: {player_a['name']}, {player_a['description']} from {player_a['country']}")
         print(f"Option B: {player_b['name']}, {player_b['description']} from {player_b['country']}")
+        print("Option S : to exit the game")
 
         option = input("** choose your option: ").lower().strip()
         if option == 'a':
@@ -34,5 +35,7 @@ def play_game():
                 break
         if option == 's':
             break
+        else:
+            print("it's not the the correct option, please try again")
 
 play_game()
